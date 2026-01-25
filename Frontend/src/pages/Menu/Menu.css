@@ -1,0 +1,40 @@
+.menu{
+    padding: 0 40px;
+}
+.menu h1{
+    text-align: center;
+    color: #c3c311;
+    font-family: 'Playfair Display', serif;
+}
+.menu-content{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+    gap: max(3vw,10px);
+}
+.menu-content p {
+    display: flex;
+    justify-content: space-between;
+    gap: max(4vw,10px);
+    margin: 10px 0;
+    font-size: max(1.3vw,14px);
+    padding-bottom: 5px;
+}
+.menu-content p span {
+    font-weight: bold;
+}
+.menu-right img{
+    width: max(15vw,20px);
+    height: max(18vw,20px);
+}
+.menu-center img{
+    width: max(18vw,20px);
+    height: max(16vw,20px);
+}
+.menu-content h2{
+    text-align: center;
+    background-color: #e85922;
+    color: white;
+    font-family:'Poly',italic;
+}

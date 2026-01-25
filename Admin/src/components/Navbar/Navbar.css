@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.action, .action span{
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+}
+.navbar .action span{
+    color: coral;
+}
+.navbar{
+    padding: 15px 40px 10px 40px;
+}

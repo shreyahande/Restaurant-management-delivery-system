@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
+.order-display {
+    padding: 0 50px;
+}
+.order-display h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-family: "Poly", serif;
+    font-style: italic;
+}
+
+.order-display-item-row {
+    display: flex;
+    gap:33px;
+    text-align: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.order-display-item-row::-webkit-scrollbar{
+    display: none;
+}
+.order-display-item img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.order-display-item {
+    padding: 10px 20px;
+    background-color: rgba(250, 235, 224, 0.71);
+    border-radius: 8px;
+}
+

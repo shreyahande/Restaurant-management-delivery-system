@@ -1,0 +1,140 @@
+.orders-container{
+    padding: 0 50px;
+    width: 80%;
+}
+.orders-container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    border-left: 6px solid #ff7b54;
+    padding-left: 12px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fafafa;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.orders-table thead {
+    background-color: #f5f7fa;
+}
+
+.orders-table th {
+    text-align: left;
+    padding: 14px 16px;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.orders-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #444;
+    vertical-align: top;
+}
+
+.address-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13px;
+    color: #555;
+}
+
+.payment-status-paid {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+.payment-status-pending {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.order-status {
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+/* Status select dropdown styling */
+.status-select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 16px;
+}
+
+.status-select:hover {
+    border-color: #aaa;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.status-select:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Loading indicator */
+.loading-indicator {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin: 20px 0;
+    border: 1px dashed #ddd;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.orders-container p {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .orders-container {
+        margin: 20px;
+        padding: 16px;
+    }
+
+    .orders-table th,
+    .orders-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .orders-container h2 {
+        font-size: 22px;
+    }
+}

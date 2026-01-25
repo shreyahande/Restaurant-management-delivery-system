@@ -1,0 +1,93 @@
+.login{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.login-form{
+    place-self: center;
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+    padding: 25px 30px;
+    font-size: 16px;
+    animation: fadeIn 0.5s;
+}
+.login-form-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.login-form-title img{
+    width: 16px;
+    cursor: pointer;
+}
+.login-form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-form-icon{
+    display: flex;
+    border-bottom: 1px solid #c9c9c9;
+    padding-bottom: 5px;
+}
+.login-form-input img{
+    height: 24px;
+    padding: 0 10px 5px 0;
+}
+.login-form-icon input{
+    border: none;
+    outline: none;
+}
+.login-forgot-password{
+    text-align: end;
+    font-size: 14px;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.login-form button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: coral;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-form button:hover{
+    background-color: #e65b28;
+}
+.login-form-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+.login-form-condition input{
+    margin: 4px;
+}
+.login-form p span{
+    color: coral;
+    cursor: pointer;
+    font-weight: bold;
+}
+.direct-login{
+    text-align: center;
+    font-size: 14px;
+}
+.direct-login-icon img{
+    padding: 15px 8px 0 8px;
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.direct-login-icon img:hover{
+    transform: scale(1.4);
+}

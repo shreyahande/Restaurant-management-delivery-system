@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6%;
+    margin: auto;
+    width: 85vw;
+}
+.action, .action span{
+    font-family: "Dancing Script", cursive;
+}
+
+.header-left h1{
+    font-size: max(5.5vw, 30px);
+    padding: 5px 0 10px 0;
+}
+.header-left span{
+    color: coral;
+}
+.header-left p{
+    font-size: 1.5vw;
+}
+
+.header-left img{
+    width: max(16vw, 18px);
+    height: max(10vw, 24px);
+
+}
+
+.header-left button{
+    padding: 0.8vw 3.5vw;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    color: white;
+    font-size: max(1.5vw ,8px);
+    box-shadow: 5px 10px 30px rgba(68, 62, 62, 0.2);
+    background-color: rgb(255, 108, 55);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.header-left button:hover{
+    box-shadow: 5px 10px 10px rgba(124, 49, 2, 0.2);
+    background-color:  rgb(255, 68, 0);
+}
+.explore-menu{
+    padding-top: max(3vw, 10px);
+}
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.header-right img {
+    width: max(37vw, 170px);
+    height: max(32vw ,170px);
+    padding-top: 40px;
+}
+
+@media(max-width:750px) {
+    .header-left button{
+        padding: 2vw 4vw;
+    }
+    .header-right img {
+        display: none;
+    }
+    .header-left p{
+        font-size: 3vw;
+    }
+}

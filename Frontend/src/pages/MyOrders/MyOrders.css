@@ -1,0 +1,134 @@
+.my-orders {
+    max-width: 1100px;
+    margin: 0 50px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.my-orders h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    border-left: 6px solid #ff7b54;
+    padding-left: 12px;
+}
+
+.loading, .error, .no-orders {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.loading {
+    background-color: #f8f9fa;
+}
+
+.error {
+    background-color: #fdecea;
+    color: #d93025;
+    border: 1px solid #f5c6cb;
+}
+
+.no-orders {
+    background-color: #f6f7f8;
+    color: #444;
+}
+
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.order-item {
+    display: grid;
+    grid-template-columns: 0.6fr 2fr 1fr 1fr 1.4fr 1fr;
+    align-items: center;
+    gap: 25px;
+    background: #fff;
+    border: 1px solid #ffd6c9;
+    border-radius: 10px;
+    padding: 18px 25px;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 1px 4px rgba(255, 123, 84, 0.1);
+}
+
+.order-item:hover {
+    transform: translateY(-3px);
+    border-color: #ff7b54;
+    box-shadow: 0 3px 10px rgba(255, 123, 84, 0.15);
+}
+
+.order-item img {
+    width: 55px;
+    height: 55px;
+}
+
+.order-item p {
+    margin: 0;
+    color: #444;
+    font-size: 15px;
+}
+
+.order-item p b {
+    font-weight: 600;
+}
+
+.order-item p span {
+    color: #ff7b54;
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.order-item button {
+    background-color: #ffefe8;
+    color: #ff7b54;
+    border: 1px solid transparent;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.order-item button:hover {
+    background-color: #ff7b54;
+    color: #fff;
+    transform: scale(1.05);
+    border-color: #ff7b54;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #ff7b54;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .order-item {
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 10px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .order-item img {
+        margin: 0 auto;
+    }
+
+    .order-item button {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+}

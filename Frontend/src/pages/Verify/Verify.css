@@ -1,0 +1,85 @@
+.verify-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.verify-loading, .verify-success, .verify-error {
+    padding: 20px;
+}
+
+.verify-success h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.verify-error h2 {
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+.order-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.order-summary h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.verify-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.verify-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.verify-success .verify-buttons button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.verify-success .verify-buttons button:hover {
+    background-color: #45a049;
+}
+
+.verify-error .verify-buttons button {
+    background-color: #f44336;
+    color: white;
+}
+
+.verify-error .verify-buttons button:hover {
+    background-color: #d32f2f;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

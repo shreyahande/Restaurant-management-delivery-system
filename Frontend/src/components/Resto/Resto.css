@@ -1,0 +1,29 @@
+
+.resto-img {
+    text-align: center;
+    position: relative;
+    padding-bottom: 20%;
+}
+.resto-img img{
+    width: max(17vw, 120px);
+    height: max(24vw, 160px);
+}
+.img-fluid {
+    position: absolute;
+    padding: 0 40%;
+}
+.img-fluids{
+    display: flex;
+    gap: 39%;
+    text-align: center;
+    padding: 10% 30.8% 0 25%;
+}
+@media(max-width:750px){
+    .img-fluids{
+        gap: 50%;
+        padding: 10% 28% 0 15%;
+    }
+    .resto-img{
+        padding-bottom: 30%;
+    }
+}

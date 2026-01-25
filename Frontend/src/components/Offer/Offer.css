@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
+
+.offer{
+    padding: 10px 12%;
+}
+.offer h1{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Poly';
+    font-style: italic;
+    font-size: max(3.5vw,30px);
+}
+.offer h1 span{
+    color: coral;
+    font-family: "Dancing Script", cursive;
+}
+.offer-items{
+    display: flex;
+    gap: max(10vw,30px);
+}
+
+.offer-img {
+    position: relative;
+    width: fit-content;
+}
+
+.offer-img img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: max(15vw, 20px);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.offer-img img:last-child {
+    position: relative;
+    width: max(27vw, 20px);
+    height: max(40vw, 30px);
+    padding-left: max(2vw, 20px);
+    z-index: 0;
+}
+.offer-item{
+    width: 50%;
+}
+.offer-item h1{
+    text-align: left;
+    font-size: max(4vw, 20px);
+}
+.offer-item p{
+    padding: 10px 25px 50px 0 ;
+    font-size: max(1.6vw, 10px);
+}
+.offer-item button {
+    padding: 8px 45px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    color: white;
+    font-size: 19px;
+    box-shadow: 5px 10px 30px rgba(68, 62, 62, 0.2);
+    background-color: rgb(255, 108, 55);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.offer-item button:hover{
+    box-shadow: 5px 10px 10px rgba(124, 49, 2, 0.2);
+    background-color:  rgb(255, 68, 0);
+}
+
+@media(max-width:750px){
+    .offer{
+        padding: 20px 30px;
+        width: 100%;
+    }
+    .offer-item h1{
+        padding: 10px 0;
+    }
+    .offer-item p{
+        padding: 5px 0 20px 0;
+    }
+    .offer-item button{
+        padding: 2vw 4vw;
+        font-size: 10px;
+    }
+    .offer-item{
+        width: 70%;
+    }
+}
