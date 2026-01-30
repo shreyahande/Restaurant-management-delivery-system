@@ -100,6 +100,8 @@ TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".jsx"
 **Reason:** Node.js cannot directly execute JSX files. JSX must be handled by a bundler like **Vite**.
 
 ---
+---
+**⚠️ Note: Some features and database data will not be visible unless the backend server is running.**
 
 ### ▶️ Correct Way to Run
 
