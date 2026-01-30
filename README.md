@@ -1,5 +1,7 @@
 # Restaurant Management Delivery System
 
+Full stack restaurant management and food delivery system featuring order management, user authentication, backend APIs, database and admin operations, built using Node.js.
+
 ## How to Run the Application
 
 ### Error Fix
@@ -35,9 +37,13 @@ The application should now start correctly and be accessible at http://localhost
     - components/ - React components
     - pages/ - Page components
     - assets/ - Images and other assets
+- Backend/ - Contains the Node.js server
+- Admin/ - Contains the admin interface
 
 ## Technologies Used
 - React
 - Vite
-- TypeScript
+- Node.js
+- Express
+- MongoDB
 - React Router
