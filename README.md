@@ -1,49 +1,147 @@
-# Restaurant Management Delivery System
+# 🍽️ Restaurant Management & Delivery System
 
-Full stack restaurant management and food delivery system featuring order management, user authentication, backend APIs, database and admin operations, built using Node.js.
+A **full‑stack restaurant management and food delivery system** featuring user authentication, order management, admin operations, backend APIs, and database integration.
 
-## How to Run the Application
+🔗 **Live Demo of Frontend:** [https://restaurant-management-delivery-syst.vercel.app](https://restaurant-management-delivery-syst.vercel.app)
+🔗 **Live Demo of Admin:** [https://restaurant-management-delivery-system-admin-ar53hjaf5.vercel.app](https://restaurant-management-delivery-system-admin-ar53hjaf5.vercel.app)
 
-### Error Fix
-If you're seeing an error like:
+---
+
+## 🚀 Features
+
+* User authentication (JWT-based)
+* Food ordering & cart management
+* Order placement and tracking
+* Admin dashboard for managing items and orders
+* RESTful backend APIs
+* MongoDB database integration
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* React
+* Vite
+* React Router
+
+**Backend**
+
+* Node.js
+* Express.js
+* MongoDB
+
+---
+
+## 📂 Project Structure
+
 ```
-TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".jsx" for C:\path\to\main.jsx
+Frontend/        # React frontend
+  └─ src/
+     ├─ components/
+          ├─ AppDownload
+          ├─ book
+          ├─ FoodDisplay
+          ├─ FoodItem
+          ├─ Footer
+          ├─ Header
+          ├─ Login
+          ├─ Navbar
+          ├─ Offer
+          ├─ OrderDisplay
+          └─ Resto
+     ├─Context
+          └─ StoreContext.jsx
+     ├─ pages/
+     └─ assets/    //contain images
+
+Backend/  # Node.js & Express backend
+   ├─ controllers/
+   ├─ config/   //databse connection
+   ├─ middleware/
+   ├─ models/
+   ├─ routes/
+   ├─ uploads/
+   └─ assets/
+
+Admin/           # Admin panel interface
+   └─ src
+       ├─ assets
+       ├─ components
+            ├─ Navbar
+            └─ Sidebar
+       └─ pages
+            ├─ Add
+            ├─ Booking
+            ├─ List
+            └─ Orders    
 ```
 
-This error occurs because Node.js cannot directly execute JSX files. JSX files need to be transpiled to JavaScript before they can be executed.
+---
 
-### Correct Way to Run the Application
+## ▶️ How to Run the Application
 
-**Option 1: Using the Batch File**
-1. Simply double-click the `run_app.bat` file in the root directory
-2. This will start the Vite development server
+### ✅ Prerequisites
 
-**Option 2: Manual Method**
-1. Open a command prompt
-2. Navigate to the Frontend directory:
-   ```
-   cd Frontend
-   ```
-3. Run the development server:
-   ```
-   npm run dev
-   ```
+* Node.js (v18+ recommended)
+* npm
 
-The application should now start correctly and be accessible at http://localhost:5173 (or another port if 5173 is in use).
+---
 
-## Project Structure
-- Frontend/ - Contains the React application
-  - src/ - Source code
-    - components/ - React components
-    - pages/ - Page components
-    - assets/ - Images and other assets
-- Backend/ - Contains the Node.js server
-- Admin/ - Contains the admin interface
+### 🔧 Common Error Fix
 
-## Technologies Used
-- React
-- Vite
-- Node.js
-- Express
-- MongoDB
-- React Router
+If you see the following error:
+
+```
+TypeError [ERR_UNKNOWN_FILE_EXTENSION]: Unknown file extension ".jsx"
+```
+
+**Reason:** Node.js cannot directly execute JSX files. JSX must be handled by a bundler like **Vite**.
+
+---
+
+### ▶️ Correct Way to Run
+
+#### Option 1: Using Batch File (Windows)
+
+* Double‑click `run_app.bat` in the root directory
+* This starts the Vite development server
+
+#### Option 2: Manual Method
+
+```bash
+npm create vite@latest
+npm install react-router-dom
+cd Frontend
+npm install
+npm run dev
+```
+
+```bash
+npm install express mongoose jsonwebtoken bcryptjs cors dotenv stripe
+cd Backend
+npm install
+npm run Server
+```
+
+
+## 🧪 Environment Variables
+
+Create a `.env` file in the **Backend** directory:
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+STRIPE_SECRET_KEY=your_stripe_key
+```
+
+---
+
+## 👥 Contributors
+
+* @shreyahande
+---
+
+
+⭐ If you like this project, don’t forget to **star the repository**!
