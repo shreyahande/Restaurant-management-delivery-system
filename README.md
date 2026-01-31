@@ -1,6 +1,6 @@
 # 🍽️ Restaurant Management & Delivery System
 
-A **full‑stack restaurant management and food delivery system** featuring user authentication, order management, admin operations, backend APIs, and database integration.
+A **full‑stack restaurant management and food delivery system** featuring user authentication, food ordering, order tracking, make table reservations, backend APIs, database integration and a admin dashboard for managing items, orders and bookings.
 
 🔗 **Live Demo of Frontend:** [https://restaurant-management-delivery-syst.vercel.app](https://restaurant-management-delivery-syst.vercel.app)
 🔗 **Live Demo of Admin:** [https://restaurant-management-delivery-system-admin-ar53hjaf5.vercel.app](https://restaurant-management-delivery-system-admin-ar53hjaf5.vercel.app)
@@ -25,12 +25,15 @@ A **full‑stack restaurant management and food delivery system** featuring user
 * React
 * Vite
 * React Router
+* Context API
 
 **Backend**
 
 * Node.js
 * Express.js
 * MongoDB
+* Stripe API
+* JWT Authentication
 
 ---
 
@@ -86,6 +89,8 @@ Admin/           # Admin panel interface
 
 * Node.js (v18+ recommended)
 * npm
+* MongoDB Atlas
+* Stripe account
 
 ---
 
