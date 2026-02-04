@@ -2,7 +2,7 @@
 
 A **full-stack restaurant management and food delivery system** featuring user authentication, food ordering, order tracking, table reservations, backend APIs, database integration, and an admin dashboard for managing items, orders, and bookings.
 
-🔗 **Live Demo of Frontend:** [https://restaurant-management-delivery-syst.vercel.app](https://restaurant-management-delivery-syst.vercel.app)                           
+🔗 **Live Demo of Frontend:** [https://restaurant-management-delivery-syst.vercel.app/](https://restaurant-management-delivery-syst.vercel.app/)                           
 🔗 **Live Demo of Admin:** [https://restaurant-management-delivery-system-admin-ar53hjaf5.vercel.app](https://restaurant-management-delivery-system-admin-ar53hjaf5.vercel.app)
 
 🔗 **Live Demo of Backend:** [https://restaurant-management-delivery-system.onrender.com](https://restaurant-management-delivery-system.onrender.com) 
