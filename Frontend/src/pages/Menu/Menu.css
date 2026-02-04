@@ -38,3 +38,11 @@
     color: white;
     font-family:'Poly',italic;
 }
+@media(max-width: 412px) {
+    .menu-content{
+        display: block;
+    }
+    .menu-right img , .menu-center img{
+        display: none;
+    }
+}
